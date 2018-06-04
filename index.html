@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- index.html Authors: Oscar Cedano/Sean Gallagher --
+Author: Oscar Cedano/Sean Gallagher (2017/04/20)
+CSC460 - Database Design
+Program 4 - Database-Driven Web App
+Due Date : 05/01/2017 3:35pm
+Instructor: Lester I. McCann
+TAs: Yawen Chen and Jacob Combs
+Prog4 is database-driven web application that has the functionality
+of a online store supermarket, as well as the main interface for
+employees and managers in the store. Website was designed to work
+by querying and storing information in our oracle DB with the use
+of a servlet database controller that serves as the middle-tier to
+transfer information between the front-end and the back-end. Each webpage
+has its own header comment with a description of the functionality they
+perform. Refer to those header comments for more information on how the
+whole site works.
+-->
+<!--Index contains the login screen for our main program. 
+Once valid credentials are entered. You get redirected 
+to a specific interface depending on userType -->
+
+<html>
+    <head>
+        <title>Welcome to the CSc 460 Supermarket</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div id="loginBox">
+            <form id="loginForm" method="post" action='login.jsp'>
+                <h1 style="color: white"><b>CSc460 Supermarket</b></h1>
+                <p class="loginP">
+                    <label class="loginL" style="color: white"><b>Username</b></label>
+                    <input type="text" name="userN" placeholder="Please Enter Username" required>
+                </p>
+                <p class="loginP">
+                    <label class="loginL" style="color: white"><b>Password</b></label>
+                    <input type="password" name="pWord" placeholder="Please Enter Password" required>
+                </p>
+                <p class="loginP">
+                    <input type="submit" id="loginB" value="Login">
+                </p>
+            </form>
+        </div>
+
+    </body>
+</html>
+
